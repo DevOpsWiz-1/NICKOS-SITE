@@ -1,0 +1,10 @@
+services:
+  website:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "7001:80"
+
+
+      
