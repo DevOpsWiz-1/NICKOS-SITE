@@ -4,3 +4,4 @@ git merge feature/update-website (This is the actual local merge)
 grep -n "020*" index.html (This searches for the text inside the file. -n show the line number where the text was found)
 docker run -d \ --name containername \ --restart unless-stopped \ -p 8080:80 \ imagename (To configure docker to automatically restart the container).
 docker tag nickosite-v2:latest devopschima11/nickosite-v2:v1.0
+git remote -v  (This means your local git repo is connected to that github repo through a remote named origin).
