@@ -1,0 +1,35 @@
+Here is a breakdown of what each of those three Git commands does for your `backend/Dockerfile`:
+
+### git diff backend/Dockerfile 
+
+**What it does:** Shows you the exact line-by-line changes made to `backend/Dockerfile` compared to the last saved commit. Added lines appear in green (`+`) and removed lines in red (`-`).
+**Use case:** Check your work before committing to make sure you didn't accidentally leave in unintended edits.
+
+
+###  git restore backend/Dockerfile
+**What it does:** Discards all uncommitted local changes in `backend/Dockerfile` and restores it back to its state in the most recent commit.
+**Use case:** Undo your local edits if you made a mistake or decided you don't want to keep those changes. *(Caution: This cannot be undone).*
+
+
+### git add backend/Dockerfile && git commit -m "Update Dockerfile
+**What it does:** Runs two commands in sequence:
+1. `git add backend/Dockerfile`: Stages the modified file, marking it ready to be saved into Git history.
+2. `git commit -m "Update Dockerfile"`: Permanently saves those staged changes into the branch's history with the message "Update Dockerfile".
+**Use case:** Save your modifications as a permanent checkpoint in your current branch (`develop-b`).
+
+docker compose exec db psql -U nickos -d nickos: This commands is use to get to your psql command-line, where you can watch and see your  database table.
+docker compose logs -f(follow) backend(service name): this command is for watching the flow of request that is going to your backend.
+docker image prune: to clear all the images that are not relavant
+\q: this command is use to queit from psql terminal.
+SELECT * FROM registrations; : this list all the table data named registrations.
+ALTER TABLE registratins RENAME TO registrations;  This is to RENAME the table name.
+\dt : list of relations
+\c : this is use to connect to a database.
+\l  : this list out all the database that psql has.
+docker volume inspect nickosstandardsite_postgres_data : inspect your volume.
+docker volume ls : list the volumes in my host machine.
+git remote -v : it shows your github repo.
+git log --oneline -5 :This shows your last five commits.
+git log --oneline --all --decorate --graph  this shows what commits each branch contains.
+git diff --stat origin/main..develop-b : comparing two versions of your project.
+git show origin/main:.github/workflows/docker.yml : This shows the content of that workflows.
