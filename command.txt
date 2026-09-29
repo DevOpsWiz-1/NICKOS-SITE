@@ -33,7 +33,3 @@ git log --oneline -5 :This shows your last five commits.
 git log --oneline --all --decorate --graph  this shows what commits each branch contains.
 git diff --stat origin/main..develop-b : comparing two versions of your project.
 git show origin/main:.github/workflows/docker.yml : This shows the content of that workflows.
-git show : to see what is changed in that commit.
-git revert or git reset : move the whole project back to the older state/ undo the changes introduced by this commit.
-git switch --detach commit ID : that lets you view your project exactly as it was at that time.
-git switch -c new branch  commit id : start new work from the old version.
