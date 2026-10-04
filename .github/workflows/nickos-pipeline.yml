@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  build:
+  test-code:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,3 +31,6 @@ jobs:
       - name: Run tests
         working-directory: backend
         run:  python -m pytest tests --maxfail=1 --disable-warnings -q
+
+      - name: Build backend image
+        run: docker build -t nickos-backend ./backend
