@@ -1,8 +1,7 @@
 # NICKOS SERVICES LTD — DevOps Practice Website
 
 A simple static company/training website designed to become an end-to-end DevOps practice project.
-
-## Files
+### Files
 
 - `index.html` — website structure/content
 - `styles.css` — styling and responsive design
